@@ -76,9 +76,8 @@ ls
 
 **Resultado esperado:** deben aparecer `CalculadoraLexer.py`, `CalculadoraParser.py` y `CalculadoraVisitor.py`.
 
-> **CAPTURA EVIDENCIA 1 - Generación de los archivos de ANTLR**
+<img width="637" height="545" alt="image" src="https://github.com/user-attachments/assets/c4275148-c428-433d-a356-be31a5b05808" />
 
-![Evidencia 1](capturas/01_generacion_antlr.png)
 
 ---
 
@@ -138,9 +137,7 @@ Por lo tanto:
 x = 20
 ```
 
-> **CAPTURA EVIDENCIA 2 - Ejecución y precedencia de operadores**
-
-![Evidencia 2](capturas/02_precedencia.png)
+<img width="637" height="255" alt="image" src="https://github.com/user-attachments/assets/7fdb1348-ca0e-440f-82a7-bb235a6f9271" />
 
 ---
 
@@ -167,9 +164,8 @@ Por lo tanto:
 y = 15
 ```
 
-> **CAPTURA EVIDENCIA 3 - Funciones Sin y abs**
+<img width="647" height="231" alt="image" src="https://github.com/user-attachments/assets/2c192f09-26a9-43d4-8376-1e6e020020df" />
 
-![Evidencia 3](capturas/03_funciones.png)
 
 ---
 
@@ -211,9 +207,8 @@ Resultado de evaluacion: 3.0
 
 Esta prueba demuestra que las variables permanecen almacenadas durante la ejecución.
 
-> **CAPTURA EVIDENCIA 4 - Tabla de símbolos y operador módulo**
+<img width="632" height="132" alt="image" src="https://github.com/user-attachments/assets/254204b6-224a-4a82-bc39-4f7c4e20e2e4" />
 
-![Evidencia 4](capturas/04_variables_modulo.png)
 
 ---
 
@@ -239,7 +234,8 @@ Esto evita realizar una operación matemáticamente inválida.
 
 > **CAPTURA EVIDENCIA 5 - Error de división por cero**
 
-![Evidencia 5](capturas/05_division_cero.png)
+<img width="646" height="113" alt="image" src="https://github.com/user-attachments/assets/ecfc9c2c-dcaf-4d18-aac3-46ba469c9f4c" />
+
 
 ---
 
@@ -261,7 +257,8 @@ Error semantico: La variable 'a' no ha sido definida.
 
 > **CAPTURA EVIDENCIA 6 - Variable no definida**
 
-![Evidencia 6](capturas/06_variable_no_definida.png)
+<img width="637" height="97" alt="image" src="https://github.com/user-attachments/assets/0c522694-e259-4409-9016-dcab8456f227" />
+
 
 ---
 
