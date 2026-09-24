@@ -1,5 +1,5 @@
 # Actividad 2 - Calculadora con ANTLR4 y Python
-
+Juan Bejarano, Alejandro Poveda, Sebastian Chaux
 ## Descripción
 
 En esta actividad se implementa una calculadora utilizando **ANTLR4** para realizar el análisis léxico y sintáctico de expresiones, junto con Python para realizar la evaluación semántica mediante el patrón **Visitor**.
