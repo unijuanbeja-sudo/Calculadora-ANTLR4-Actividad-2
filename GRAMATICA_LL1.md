@@ -3,7 +3,7 @@
 
 ---
 
-## 1. Alcance y Especificación del Lenguaje
+## Alcance y Especificación del Lenguaje
 
 El lenguaje soporta:
 - **Operaciones Aritméticas**: Adición (`+`), Sustracción (`-`), Multiplicación (`*`), División (`/`), Módulo (`%`).
@@ -15,7 +15,7 @@ El lenguaje soporta:
 
 ---
 
-## 2. Gramática Formal LL(1)
+## Gramática Formal LL(1)
 
 Para evitar la ambigüedad y permitir análisis determinista con 1 token de anticipación ($k=1$), se aplicaron dos transformaciones clásicas:
 1. **Eliminación de Recursión Izquierda**: Para establecer la precedencia usual de operadores (aditivos y multiplicativos).
@@ -68,7 +68,7 @@ Para evitar la ambigüedad y permitir análisis determinista con 1 token de anti
 
 ---
 
-## 3. Conjuntos PRIMEROS y SIGUIENTES
+## Conjuntos PRIMEROS y SIGUIENTES
 
 ### Definiciones
 - **$PRIMEROS(\alpha)$**: Conjunto de terminales que pueden aparecer al inicio de una cadena derivada de $\alpha$. Contiene $\varepsilon$ si $\alpha \Rightarrow^* \varepsilon$.
@@ -91,7 +91,7 @@ Para evitar la ambigüedad y permitir análisis determinista con 1 token de anti
 
 ---
 
-## 4. Conjuntos de PREDICCIÓN y Validación LL(1)
+## Conjuntos de PREDICCIÓN y Validación LL(1)
 
 La regla formal de predicción para una producción $A \to \alpha$ es:
 $$PRED(A \to \alpha) = \begin{cases} PRIMEROS(\alpha) & \text{si } \varepsilon \notin PRIMEROS(\alpha) \\ (PRIMEROS(\alpha) - \{\varepsilon\}) \cup SIGUIENTES(A) & \text{si } \varepsilon \in PRIMEROS(\alpha) \end{cases}$$
@@ -142,7 +142,7 @@ Para cada no terminal con dos o más alternativas:
 
 ---
 
-## 5. Garantía de Fases del Compilador
+## Garantía de Fases del Compilador
 
 1. **Fase Léxica (`lexer.py`)**:
    - Escanea el texto y convierte la entrada en tokens tipados.
@@ -158,7 +158,7 @@ Para cada no terminal con dos o más alternativas:
 
 ---
 
-## 6. Instrucciones de Ejecución
+## Instrucciones de Ejecución
 
 Para ejecutar un archivo de prueba:
 ```bash
