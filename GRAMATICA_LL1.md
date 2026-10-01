@@ -129,7 +129,7 @@ $$PRED(A \to \alpha) = \begin{cases} PRIMEROS(\alpha) & \text{si } \varepsilon \
 
 ### Comprobación del Criterio LL(1)
 Para cada no terminal con dos o más alternativas:
-- **$L$**: $PRED(2) \cap PRED(3) = \{ \text{ID}, \dots \} \cap \{ \text{\$} \} = \emptyset$ (Disjuntos)
+- **$L$**: $PRED(2) \cap PRED(3) = \{ \text{ID}, \dots \} \cap \{ \text{EOF} \} = \emptyset$ (Disjuntos)
 - **$S$**: $PRED(4) \cap PRED(5) = \{ \text{ID} \} \cap \{ \text{NUMERO}, (, \dots \} = \emptyset$ (Disjuntos)
 - **$R$**: $PRED(6) \cap PRED(7) = \{ = \} \cap \{ *, /, \text{\%}, +, -, ; \} = \emptyset$ (Disjuntos)
 - **$E'$**: $PRED(9) \cap PRED(10) = \emptyset$, $PRED(9) \cap PRED(11) = \emptyset$, $PRED(10) \cap PRED(11) = \emptyset$ (Disjuntos dos a dos)
