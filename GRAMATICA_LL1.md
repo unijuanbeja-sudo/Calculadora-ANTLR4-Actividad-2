@@ -129,14 +129,14 @@ $$PRED(A \to \alpha) = \begin{cases} PRIMEROS(\alpha) & \text{si } \varepsilon \
 
 ### Comprobación del Criterio LL(1)
 Para cada no terminal con dos o más alternativas:
-- **$L$**: $PRED(2) \cap PRED(3) = \{ \text{ID}, \dots \} \cap \{ \$ \} = \emptyset$ (Disjuntos)
+- **$L$**: $PRED(2) \cap PRED(3) = \{ \text{ID}, \dots \} \cap \{ \text{\$} \} = \emptyset$ (Disjuntos)
 - **$S$**: $PRED(4) \cap PRED(5) = \{ \text{ID} \} \cap \{ \text{NUMERO}, (, \dots \} = \emptyset$ (Disjuntos)
-- **$R$**: $PRED(6) \cap PRED(7) = \{ = \} \cap \{ *, /, \%, +, -, ; \} = \emptyset$ (Disjuntos)
+- **$R$**: $PRED(6) \cap PRED(7) = \{ = \} \cap \{ *, /, \text{\%}, +, -, ; \} = \emptyset$ (Disjuntos)
 - **$E'$**: $PRED(9) \cap PRED(10) = \emptyset$, $PRED(9) \cap PRED(11) = \emptyset$, $PRED(10) \cap PRED(11) = \emptyset$ (Disjuntos dos a dos)
-- **$T'$**: $PRED(13)$, $PRED(14)$, $PRED(15)$, $PRED(16)$ son `{ * }`, `{ / }`, `{ % }` y `{ +, -, ;, ) }`. Ninguno se solapa. (Disjuntos dos a dos)
+- **$T'$**: $PRED(13)$, $PRED(14)$, $PRED(15)$, $PRED(16)$ son $\{ * \}$, $\{ / \}$, $\{ \text{\%} \}$ y $\{ +, -, ;, ) \}$. Ninguno se solapa. (Disjuntos dos a dos)
 - **$F$**: $PRED(17) \cap PRED(18) = \{ \text{ID} \} \cap \{ \text{NUMERO}, \dots \} = \emptyset$ (Disjuntos)
-- **$F_{no\_id}$**: Las reglas 19, 20, 21, 22 y 23 predicen `{NUMERO}`, `{ ( }`, `{sin, cos, tan, abs}`, `{ - }` y `{ + }`. Ninguno se solapa. (Disjuntos dos a dos)
-- **$Fn$**: Las reglas 24, 25, 26 y 27 predicen `{sin}`, `{cos}`, `{tan}`, `{abs}`. Ninguno se solapa. (Disjuntos dos a dos)
+- **$F_{no\_id}$**: Las reglas 19, 20, 21, 22 y 23 predicen $\{\text{NUMERO}\}$, $\{ ( \}$, $\{\text{sin}, \text{cos}, \text{tan}, \text{abs}\}$, $\{ - \}$ y $\{ + \}$. Ninguno se solapa. (Disjuntos dos a dos)
+- **$Fn$**: Las reglas 24, 25, 26 y 27 predicen $\{\text{sin}\}$, $\{\text{cos}\}$, $\{\text{tan}\}$, $\{\text{abs}\}$. Ninguno se solapa. (Disjuntos dos a dos)
 
 **Conclusión**: La gramática satisface estrictamente el criterio de determinismo LL(1).
 
